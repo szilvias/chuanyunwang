@@ -1,0 +1,11 @@
+
+.navibar {
+    display: flex;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.navibar > div {
+    flex: 1;
+}
+
