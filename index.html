@@ -6,6 +6,13 @@
     <meta name="description" content="海外华人防疫综合信息">
     <title>穿云网: 海外华人防疫信息平台</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      #map {
+        width: 70%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
     <h2>穿云网: 海外华人防疫信息平台</h2>
@@ -19,8 +26,22 @@
     <div class="info">领馆信息</div>
     <div class="qanda">自助问答</div>
     </div>
-
-    <script src="my-js-file.js"></script>
-
+    <h3>Google Maps</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+  // The location of Munich
+  var munich = {lat: 48.139, lng: 11.589};
+  // The map, centered at Munich
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 5, center: munich});
+  // The marker, positioned at Munich
+  var marker = new google.maps.Marker({position: munich, map: map});
+}
+    </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDokzz6wMW6h1eTdJzCuvp8y98zV25LDN4&callback=initMap">
+</script>
   </body>
 </html> 
