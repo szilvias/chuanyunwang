@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="author" content="Xiyue Sun">
     <meta name="description" content="海外华人防疫综合信息">
-    <title>穿云网: 海外华人防疫信息平台</title>
+    <script src="windows.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <title>穿云网: 海外华人防疫信息平台</title>
+    
     <style>
       #map {
         width: 70%;
@@ -18,35 +20,61 @@
     <header class="header">
       <h2>穿云网: 海外华人防疫信息平台</h2>
     </header>
-    <div class="navibar">
-    <div class="homepage">首页</div>
-    <div class="map">疫情地图</div>
-    <div class="news">实时疫情</div>
-    <div class="policy">政策梳理</div>
-    <div class="test">检测隔离</div>
-    <div class="info">领馆信息</div>
-    <div class="qanda">自助问答</div>
-    </div>
 
-    <div class="questions">
-        <a href="#" class="sf-accordion__link">
-                  什么是冠状病毒？
-        </a>
+    <ul class="tabs">
+      <li data-tab-target="#homepage" class="tab">首页</li>
+      <li data-tab-target="#virusmap" class="tab">疫情地图</li>
+      <li data-tab-target="#news" class="tab">实时疫情</li>
+      <li data-tab-target="#policy" class="tab">政策梳理</li>
+      <li data-tab-target="#test" class="tab">检测隔离</li>
+      <li data-tab-target="#info" class="tab">领馆信息</li>
+      <li data-tab-target="#qanda" class="tab">自助问答</li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="homepage" data-tab-content class="active">
+        <h2>首页</h2>
+        <p>欢迎来到穿云网</p>
       </div>
-    <div class="answer">
-        <p class="sf-accordion__summary">
-            <div><p>冠状病毒是可以导致动物或人间疾病的一个大型病毒家族。一些冠状病毒已知可在人间引起呼吸道感染，范围从感冒到中东呼吸综合征（MERS）和严重急性呼吸综合征（SARS）等较严重疾病不等。最近发现的冠状病毒导致2019冠状病毒病（COVID-19）。</p></div>
-        </p>
+      <div id="virusmap" data-tab-content>
+        <h2>疫情地图</h2>
+        <p>请选择国家或地区</p>
+      </div>
+      <div id="news" data-tab-content>
+        <h2>实时疫情</h2>
+        <p>选择地区查看当地疫情信息统计</p>
+      </div>
+      <div id="policy" data-tab-content>
+        <h2>政策梳理</h2>
+        <p>出入境隔离政策</p>
+      </div>
+      <div id="test" data-tab-content>
+        <h2>隔离检测</h2>
+        <p>查询新馆病毒检测点</p>
+      </div>
+      <div id="info" data-tab-content>
+        <h2>领馆信息</h2>
+        <p>查询使领馆信息</p>
+          <h3>Google Maps</h3>
+          <!--The div element for the map -->
+          <div id="map"></div>
+      </div>
+      <div id="qanda" data-tab-content>
+        <h2>自助问答</h2>
+        <p>关于新型冠状肺炎病毒的常见问题</p>
+          <div class="questions">
+            <a href="#" class="wenti">
+                  什么是冠状病毒？
+            </a>
+          </div>
+          <div class="answer">
+            <p class="huida">
+              <div><p>冠状病毒是可以导致动物或人间疾病的一个大型病毒家族。一些冠状病毒已知可在人间引起呼吸道感染，范围从感冒到中东呼吸综合征（MERS）和严重急性呼吸综合征（SARS）等较严重疾病不等。最近发现的冠状病毒导致2019冠状病毒病（COVID-19）。</p></div>
+            </p>
+          </div>
+      </div>
     </div>
-
-
-
-
-    <h3>Google Maps</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-
+    
 
     <footer class="footer">
       <h3>&copy; 穿云网项目组 BLANK FM</h3>
@@ -63,8 +91,14 @@
   var marker = new google.maps.Marker({position: munich, map: map});
 }
     </script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDokzz6wMW6h1eTdJzCuvp8y98zV25LDN4&callback=initMap">
-</script>
+
+    <div id="output"></div>
+   
+
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDokzz6wMW6h1eTdJzCuvp8y98zV25LDN4&callback=initMap">
+    </script>
+
   </body>
 </html> 

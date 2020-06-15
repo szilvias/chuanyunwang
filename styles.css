@@ -1,13 +1,4 @@
 
-.navibar {
-    display: flex;
-    background-color: rgb(100, 100, 175);
-    color: aliceblue;
-}
-
-.navibar > div {
-    flex: 1;
-}
 
 .header {
     width: 100%;
@@ -26,4 +17,32 @@
     text-align: center;
     line-height: 100px;
     color: aliceblue;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(132, 109, 214);
+    height: 40px;
+    color: aliceblue;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab:hover {
+    background-color: blueviolet;
 }
