@@ -28,6 +28,7 @@
 }
 
 .tabs {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -45,4 +46,20 @@
 
 .tab:hover {
     background-color: blueviolet;
+}
+
+.wrapper > div {
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: #ddd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
 }

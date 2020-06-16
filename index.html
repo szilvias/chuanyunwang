@@ -24,7 +24,7 @@
     <ul class="tabs">
       <li data-tab-target="#homepage" class="tab">首页</li>
       <li data-tab-target="#virusmap" class="tab">疫情地图</li>
-      <li data-tab-target="#news" class="tab">实时疫情</li>
+      <li data-tab-target="#news" class="tab">实时新闻</li>
       <li data-tab-target="#policy" class="tab">政策梳理</li>
       <li data-tab-target="#test" class="tab">检测隔离</li>
       <li data-tab-target="#info" class="tab">领馆信息</li>
@@ -41,8 +41,25 @@
         <p>请选择国家或地区</p>
       </div>
       <div id="news" data-tab-content>
-        <h2>实时疫情</h2>
+        <h2>疫情新闻</h2>
         <p>选择地区查看当地疫情信息统计</p>
+        <!--此处还需要一个选择按钮-->
+        <div class="wrapper">
+          <div>
+            <p><strong><a href ="http://www.bjnews.com.cn/news/2020/06/16/739074.html" target="_blank">背水一战！北京提升应急响应级别至二级</a></strong></p>
+            新京报快讯（记者 沙雪良 李玉坤）6月16日晚，北京市举行第121场新冠肺炎疫情防控工作新闻发布会，北京市政府副秘书长陈蓓宣布，北京应急响应级别由三级提升到二级。今年1月下旬，为应对新冠疫情，北京市启动重大突发公共卫生事件一级响应。随着疫情防控形势的变化，北京市突发公共卫生事件应急响应级别在4月30日0时由一级下调至二级，在6月6日0时起由二级调至三级，并相应调整防控策略。从6月11日至15日，北京市连续5天报告106例新冠肺炎确诊病例，均与北京新发地市场有关。因出现确诊病例，北京16个区中已有9个区的20多个街乡疫情风险等级提升。6月13日，北京新发地市场所在地丰台区启动战时机制，北京市暂停举办所有体育赛事活动，北京餐饮、美容美发等行业均提升到二级防控，西城、海淀、石景山等多个区提高社区防控级别。
+          </div>
+          <div>
+            <p><strong><a href ="http://www.bjnews.com.cn/news/2020/06/16/738958.html" target="_blank">北京最全核酸检测攻略：要不要测、怎么预约、咋看结果?</a></strong></p>
+            新京报讯（记者 戴轩）依据北京市卫健委发布的信息，6月11日到15日，全市累计确诊新冠肺炎病例106人，其中不少是通过主动就医筛查发现的。为防控疫情，北京近日加大了对相关人员核酸检测力度，且面向社会公示了98家可预约检测的机构。那么，到底哪些人应该检测？哪里可以预约？有哪些注意事项？新京报记者梳理了相关信息，并实地探访北京核酸筛查门诊，采访感染科专家进行解答。
+          </div>
+
+          <div>
+            <p><strong><a href ="http://www.bjnews.com.cn/news/2020/06/16/738710.html" target="_blank">北京：把疫情防控作为当前最重要、最紧迫的任务来抓</a></strong></p>
+            据北京日报消息，昨天下午，北京新冠肺炎疫情防控工作领导小组第六十九次会议暨首都严格进京管理联防联控协调机制第三十次会议召开，深入贯彻习近平总书记重要指示精神，进一步研究调度疫情防控工作。市委书记、防控工作领导小组组长蔡奇主持会议，市委副书记、市长、防控工作领导小组副组长陈吉宁，国家卫生健康委副主任、专家组组长曾益新出席会议。
+          </div>
+        </div>
+
       </div>
       <div id="policy" data-tab-content>
         <h2>政策梳理</h2>
@@ -86,7 +103,7 @@
   var munich = {lat: 48.139, lng: 11.589};
   // The map, centered at Munich
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 5, center: munich});
+      document.getElementById('map'), {zoom: 7, center: munich});
   // The marker, positioned at Munich
   var marker = new google.maps.Marker({position: munich, map: map});
 }
