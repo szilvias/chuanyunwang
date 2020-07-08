@@ -1,32 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- 主机： 127.0.0.1:3308
--- 生成日期： 2020-06-21 19:45:31
--- 服务器版本： 8.0.18
--- PHP 版本： 7.3.12
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- 数据库： `newstest`
---
-
--- --------------------------------------------------------
-
---
--- 表的结构 `question`
---
+/*数据库： `newstest`； 表的结构 `question`*/
 
 DROP TABLE IF EXISTS `question`;
 CREATE TABLE IF NOT EXISTS `question` (
@@ -35,9 +12,7 @@ CREATE TABLE IF NOT EXISTS `question` (
   `qanswer` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- 转存表中的数据 `question`
---
+/*转存表中的数据 `question`*/
 
 INSERT INTO `question` (`qno`, `qname`, `qanswer`) VALUES
 (0, 'qname', 'qanswer'),
@@ -68,6 +43,3 @@ INSERT INTO `question` (`qno`, `qname`, `qanswer`) VALUES
 (25, '病人粪便会使人感染COVID-19吗？', '回答25');
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

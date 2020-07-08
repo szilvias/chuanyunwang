@@ -1,32 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- 主机： 127.0.0.1:3308
--- 生成日期： 2020-06-21 19:52:36
--- 服务器版本： 8.0.18
--- PHP 版本： 7.3.12
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- 数据库： `newstest`
---
-
--- --------------------------------------------------------
-
---
--- 表的结构 `germannews03`
---
+/*数据库： `newstest`；表的结构 `germannews03`*/
 
 DROP TABLE IF EXISTS `germannews03`;
 CREATE TABLE IF NOT EXISTS `germannews03` (
@@ -40,9 +17,7 @@ CREATE TABLE IF NOT EXISTS `germannews03` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- 转存表中的数据 `germannews03`
---
+/*转存表中的数据 `germannews03`*/
 
 INSERT INTO `germannews03` (`id`, `country`, `state`, `city`, `time`, `title`, `news`) VALUES
 (1, '德国', '巴伐利亚州', '慕尼黑', '星期五19.06.2020 12:57', 'München: Masken liegen ueberall in der Stadt rum', 'Ueberall in der Stadt liegen Einwegmasken auf den Straßen. Muenchens oberste Muellfrau Kristina Frank ruft die Muenchner auf, sie richtig zu entsorgen.\r\n\r\nAnfangs waren es nur vereinzelt huebsche, handgenaehte Stoffmasken, die man – verloren – auf Muenchens Straßen herumliegen sah. Wer sich trotz Corona-Sorgen getraut hat, sie anzufassen, hat sie vielleicht eingesammelt, ausgekocht und so seine Sammlung an modischen Mund-und-Nasenschutz-Accessoires stetig erweitert.\r\n\r\nInzwischen macht der Blick auf verlorene oder sonstwie liegengebliebene Schutzmasken laengst keine Freude mehr. An bald jeder Ecke der Stadt sieht man die hellblauen oder weißen Einweg-Teile als Muell auf der Straße liegen. Offenbar fallen sie oft zwischen parkenden Autos aus der Handtasche. Sie flattern im Fahrtwind von Radlkoerben auf die Straße oder bleiben unter Tischen von Straßencafes liegen. Auch an Bus- oder Tramhaltestellen liegen sie gern. Dort, wo die Maskenpflicht endet, wenn Fahrgaeste aus den oeffentlichen Verkehrsmitteln steigen.\r\n\r\nBenutzte Masken koennen Mitarbeiter der Straßenreinigung gefaehrden\r\n\r\nFuer die staedtische Straßenreinigung wird die neue Masken-Vermuellung zunehmend zum Aergernis. Kristina Frank (CSU), die als Kommunalreferentin auch Chefin des Abfallwirtschaftsbetriebs ist, appelliert nun an die Muenchner, umsichtiger mit ihren benutzten Masken umzugehen: \"Bitte nicht im Straßenraum fallen und liegen lassen\", sagt sie. \"Denken Sie daran, dass sie ja auch mit Viren und Bakterien kontaminiert sein koennen.\" Und dass man die Mitarbeiter der Straßenreinigung nicht unnoetig gefaehrden soll.\r\n\r\nWohin also mit den Einweg-Masken? Sie gehoeren in den Restmuell, genau wie Desinfektionstücher und Einmalhandschuhe, die zum Schutz vor dem Coronavirus oft im Alltag getragen werden. Dort werden sie verbrannt.'),
@@ -58,6 +33,3 @@ INSERT INTO `germannews03` (`id`, `country`, `state`, `city`, `time`, `title`, `
 (11, '法国', '', '', '', '', '');
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
